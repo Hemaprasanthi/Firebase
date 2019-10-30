@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Main Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="details_div" class="main-div" style="display:block">
+    <h3>Please Enter your Details</h3>
+    <input type="text" placeholder="First Name..." id="firstname" />
+    <input type="text" placeholder="Last Name..." id="lastname" />
+    <input type="text" placeholder="Student ID..." id="sid" />
+    <input type="text" placeholder="Assignment Number..." id="asgnumber" />
+<div></div>
+    <button onclick="send()">Send</button><br>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCxBAdBss8ZuYX-ZtUDYHMl6kBalGYmSX0",
+      authDomain: "fir-d7bae.firebaseapp.com",
+      databaseURL: "https://fir-d7bae.firebaseio.com",
+      projectId: "fir-d7bae",
+      storageBucket: "fir-d7bae.appspot.com",
+      messagingSenderId: "189459554410",
+      appId: "1:189459554410:web:1719c2509c66ef4d33aa13"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
+

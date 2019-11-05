@@ -1,0 +1,13 @@
+{
+  "hobbies": [{
+    "hobbies1": "Painting",
+    "hobbies2": "Dancing",
+    "hobbies3": "Singing",
+    "hobbies4": "Coding"
+  }, {
+    "hobbies1": "Running",
+    "hobbies2": "Cooking",
+    "hobbies3": "Singing",
+    "hobbies4": "Sleeping"
+  }]
+}

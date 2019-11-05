@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div" style="display:block">
+    <h3>Firebase Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+<div></div>
+    <button onclick="login()">Login to Account</button><br>
+    <button onclick="signup()">Sign up Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div" style="display:none">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyDqcohPqIpV7U5jwdcl0meB0rPjhQpUUBQ",
+    authDomain: "assign-6af5c.firebaseapp.com",
+    databaseURL: "https://assign-6af5c.firebaseio.com",
+    projectId: "assign-6af5c",
+    storageBucket: "assign-6af5c.appspot.com",
+    messagingSenderId: "940387776979",
+    appId: "1:940387776979:web:d36201b943638d45a19726"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
+

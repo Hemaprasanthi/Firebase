@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Hobbies Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="details_div" class="main-div" style="display:block">
+    <h3>Please Enter your hobbies</h3>
+    <input type="text" placeholder="hobby1..." id="hobby1_field" />
+    <input type="text" placeholder="hobby2..." id="hobby2_field" />
+    <input type="text" placeholder="hobby3..." id="hobby3_field" />
+    <input type="text" placeholder="hobby4..." id="hobby4_field" />
+<div></div>
+    <button onclick="send()">Send</button><br>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDqcohPqIpV7U5jwdcl0meB0rPjhQpUUBQ",
+    authDomain: "assign-6af5c.firebaseapp.com",
+    databaseURL: "https://assign-6af5c.firebaseio.com",
+    projectId: "assign-6af5c",
+    storageBucket: "assign-6af5c.appspot.com",
+    messagingSenderId: "940387776979",
+    appId: "1:940387776979:web:d36201b943638d45a19726"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="hobbies.js"></script>
+
+</body>
+</html>
+

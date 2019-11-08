@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Main Page</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+ <link rel="stylesheet" href="style.css" /> -->
+</head>
+<body>
+  <form id="details_div" class="main-div" style="display:block">
+    <h3>Please Enter your Details</h3><br>
+    Student Name: Hema<br>
+    Student ID: 1289 <br>
+    Database ID: fir-2b1563 <br><br>
+    Please enter your first name: <input type="text" placeholder="First Name..." id="firstname" required="true"/><br>
+    Please enter your last name: <input type="text" placeholder="Last Name..." id="lastname" required="true"/><br>
+    Please enter your student id: <input type="text" placeholder="Student ID..." id="sid" required="true"/><br>
+    Please enter your class number (01 or 02):<input type="text" placeholder="Class Number..." id="asgnumber" required="true"/><br>
+    <button type = "submit" onclick="send()">Send</button><br>
+    Note: Please input all the fields. Provide your complete student id. Please provide your name as in the SJSU records.
+  </form>
+
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyA0Nu09gRQbXhiAgCxjJh1YgHZoR1i5pxM",
+    authDomain: "final-2b88e.firebaseapp.com",
+    databaseURL: "https://final-2b88e.firebaseio.com",
+    projectId: "final-2b88e",
+    storageBucket: "final-2b88e.appspot.com",
+    messagingSenderId: "665282824354",
+    appId: "1:665282824354:web:164c2045c9bfe0244aaffb"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
+
